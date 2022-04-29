@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fffef5;
+  color: #3e3921;
+  font-family: "Raleway", sans-serif;
+  font-feature-settings: "pnum" on, "lnum" on;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+    padding: 0;
+}
+
+.main-container {
+  padding: 0 56px;
+}
+
+.nav-panel {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-panel__link {
+  margin-left: 60px;
+  color: #3e3921;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-panel__link:hover {
+  color: #f3d70d;
+}
+
+.main-banner {
+  margin-top: 84px;
+  font-size: 11.5vw;
+  line-height: 0.9;
+  font-family: "Cormorant", sans-serif;
+  font-weight: 500;
+}
+
+.holitilin-word {
+  color: #f3d70d;
+  display: flex;
+}
+
+.holitilin-copyright {
+  font-size: 4vw;
+  position: relative;
+}
+
+.move-right-word {
+  float: right;
+  display: flex;
+}
+
+.main-banner-boxes {
+  position: absolute;
+  right: 0;
+  top: 78px;
+}
+
+.can-participate {
+    font-size: 5vw;
+    font-weight: 500;
+    font-family: "Cormorant", sans-serif;
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin-top: 170px;
+    text-align: center;
+    position: relative;
+}
+
+.can-participate-img {
+    position: absolute;
+    top: 45%;
+    right: 7%;
+    width: 14vw;
+}
+
+.target-patients {
+    margin-top: 170px;
+    display: flex;
+}
+
+.leader__imgs {
+    display: flex;
+    align-items: center;
+}
+
+.leader__intro {
+    font-weight: 700;
+}
+
+.leader__intro,
+.leader__name {
+    font-size: 18px;
+}
+
+.patients__heading {
+    font-weight: 700;
+}
+
+.patients__list {
+   padding-left: 18px;
+}
+
+.patients__list li {
+    margin-top: 24px;
+}
+
+.research-dates {
+    display: flex;
+    justify-content: end;
+    margin-top: 155px;
+}
+
+.research-date {
+    margin-left: 140px;
+}
+
+.research-date__number {
+    font-family: 'Cormorant', sans-serif;
+    font-weight: 500;
+    line-height: 1;
+    font-size: 9vw;
+}
+
+.research-date__text {
+    text-align: center;
+    font-size: 18px;
+}
+
+.attention {
+    font-family: 'Cormorant', sans-serif;
+    font-weight: 500;
+    font-size: 4vw;
+    line-height: 1;
+    margin-top: 150px;
+}
+
+.brands {
+    margin-top: 117px;
+}
+
+.holitilin-tablets {
+    text-align: center;
+}
+
+.holitilin-tablets__img {
+    margin-bottom: -43px;
+}
+
+.brands__heading {
+    font-size: 5vw;
+    font-weight: 500;
+    font-family: "Cormorant", sans-serif;
+    line-height: 1.2;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.brands__description {
+    display: flex;
+    margin-left: 100px;
+}
+
+.brands__block {
+    display: flex;
+    align-items: center;
+}
+
+.brands__img img {
+    margin-left: -63px;
+}
+
+.brand__number {
+    font-weight: 500;
+    font-family: 'Cormorant', sans-serif;
+    font-size: 4vw;
+}
+
+.brand__name {
+    font-weight: 700;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.brand__desc {
+    font-size: 18px;
+    margin-top: 7px;
+}
+
+body {
+    perspective: 500px;
+}
+  
+.char {
+animation: rot 20s linear infinite;
+width: 10px;
+height: 10px;
+margin-left: -20px;
+text-align: center;
+font-size: 16px;
+font-weight: 600;
+position: absolute;
+transform: rotateZ(90deg);
+}
+  
+#spin {
+margin-left: 50vw;
+}
+
+@keyframes rot {
+from {transform: rotateZ(var(--a)) translateX(70px) translateY(10px)}
+to   {transform: rotateZ(calc(var(--a) - 360deg)) translateX(70px) translateY(10px)}
+}
