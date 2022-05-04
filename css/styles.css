@@ -3,6 +3,7 @@
 html {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -10,6 +11,8 @@ body {
   color: #3e3921;
   font-family: "Raleway", sans-serif;
   font-feature-settings: "pnum" on, "lnum" on;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -107,6 +110,23 @@ ul {
     font-size: 18px;
 }
 
+.leader__intro {
+    margin-top: 11px;
+}
+
+.leader__name {
+    margin-top: 8px;
+}
+
+.leader__photo {
+    margin-right: -10px;
+}
+
+.patients {
+    font-size: 24px;
+    margin-left: 129px;
+}
+
 .patients__heading {
     font-weight: 700;
 }
@@ -171,14 +191,28 @@ ul {
 }
 
 .brands__description {
-    display: flex;
     margin-left: 100px;
+}
+
+.brands__description_flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.holitilin__description {
+    margin-top: 72px;
+    font-size: 24px;
 }
 
 .brands__block {
     display: flex;
     align-items: center;
+    margin-top: 20px;
 }
+
+/* .brand {
+    margin-right: 134px;
+} */
 
 .brands__img img {
     margin-left: -63px;
@@ -199,29 +233,171 @@ ul {
 .brand__desc {
     font-size: 18px;
     margin-top: 7px;
+} 
+
+.reward {
+    margin-top: 146px;
+    display: flex;
 }
 
-body {
-    perspective: 500px;
-}
-  
-.char {
-animation: rot 20s linear infinite;
-width: 10px;
-height: 10px;
-margin-left: -20px;
-text-align: center;
-font-size: 16px;
-font-weight: 600;
-position: absolute;
-transform: rotateZ(90deg);
-}
-  
-#spin {
-margin-left: 50vw;
+.reward__heading {
+    font-size: 1vw;
 }
 
-@keyframes rot {
-from {transform: rotateZ(var(--a)) translateX(70px) translateY(10px)}
-to   {transform: rotateZ(calc(var(--a) - 360deg)) translateX(70px) translateY(10px)}
+.reward__span {
+    font-family: 'Cormorant', sans-serif;
+    font-weight: 500;
+    font-size: 9vw;
+    display: block;
+    margin: -21px -8px;
+}
+
+.reward__prices {
+    margin-left: 2%;
+    font-size: 4vw;
+    display: flex;
+    width: 40%;
+    justify-content: space-evenly;
+}
+
+.reward__price {
+    font-family: 'Cormorant', sans-serif;
+}
+
+.reward__price_span {
+    display: block;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2vw;
+}
+
+.apteka {
+    margin-top: 147px;
+    display: flex;
+    font-size: 24px;
+}
+
+.apteka__text {
+    margin-left: 112px;
+}
+
+.apteka__link {
+    font-weight: bold;
+    color: #F3D70D;
+    text-decoration: underline;
+}
+
+.questions {
+    font-family: 'Cormorant', sans-serif;
+    font-weight: 500;
+    font-size: 5vw;
+    text-align: center;
+    margin-top: 66px;
+}
+
+.contact {
+    text-align: center;
+    margin-top: 54px;
+}
+
+.contact__name,
+.contact__desc,
+.contact__mail {
+    font-size: 24px;
+}
+
+.contact__phone,
+.contact__mail {
+    display: block;
+}
+
+.contact__phone {
+    font-family: 'Cormorant', sans-serif;
+    font-size: 62px;
+    margin-top: 8px;
+    color: #3E3921;
+}
+
+.contact__mail {
+    color: #F3D70D;
+    margin-top: 8px;
+}
+
+.animated-link {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.circle {
+    position: relative;/*относительное позиционирование*/
+    width: 128px;/*ширина круга*/
+    height: 128px;/*высота круга*/
+    border-radius: 50%;/*скругление углов*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F3D70D;/*цвет круга*/
+    transition: all 0.3s ease-in-out;
+    margin-left: 16px;
+}
+
+.circle:hover {
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.circle:hover .circle__text {
+    animation: animate 4s linear infinite;
+}
+
+.circle__text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: animate 10s linear infinite;
+    transition: 0.3s ease-in-out;
+}
+
+.animated-text-span {
+    position: absolute;
+    left: 51%;/*позиция слева*/
+    top: 3%;
+    font-size: 16px;/*размер шрифта*/
+    font-weight: 600;
+    transform-origin: 0 60px;/*точка исхода трансформации*/
+}   
+
+.circle__arrow {
+    position: absolute;/*абсолютное позиционирование*/
+    width: 24px;
+    height: 24px;     
+    background: url(../img/icons/arrow-right.svg);/*изображение*/
+    background-size: cover;/*картинка пропорционально растянута на весь блок*/
+    border-radius: 50%;
+}
+
+@keyframes animate {
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}   
+
+footer {
+    margin-top: 100px;
+    padding: 30px 0;
+    text-align: center;
+    border-top: 1px solid #D3CDB0;
+}
+
+.sponsor {
+    line-height: 1.5;
+}
+
+.sponsor-logo {
+    margin-top: 20px;
 }
