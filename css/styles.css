@@ -13,6 +13,7 @@ body {
   font-feature-settings: "pnum" on, "lnum" on;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 a {
@@ -38,6 +39,32 @@ ul {
   margin-left: 60px;
   color: #3e3921;
   transition: all 0.3s ease-in-out;
+}
+
+.burger-menu {
+    display: none;
+}
+
+.mobile-burger-img {
+    cursor: pointer;
+}
+
+.mobile-menu {   
+    display: none;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 3;    
+    background-color: #fffef5;
+}
+
+.mobile-menu__link {
+    list-style: none;
+    margin-top: 15px;
+}
+
+.mobile-menu__link_a {
+    color: #3E3921;
 }
 
 .nav-panel__link:hover {
@@ -202,6 +229,10 @@ ul {
 .holitilin__description {
     margin-top: 72px;
     font-size: 24px;
+}
+
+.holitilin__description_mobile {
+    display: none;
 }
 
 .brands__block {
@@ -395,9 +426,252 @@ footer {
 }
 
 .sponsor {
-    line-height: 1.5;
+    font-size: 18px;
+    line-height: 25.2px;
 }
 
 .sponsor-logo {
     margin-top: 20px;
+}
+
+@media (max-width: 1120px) {
+    .circle {
+        width: 80px;
+        height: 80px;
+    }
+
+    .animated-text-span {
+        transform-origin: 0 38px;
+        font-size: 10px;
+        left: 50%;
+        top: 2%;
+    }
+
+    .animated-link__text {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-banner {
+        font-size: 35px;
+    }
+
+    .main-banner-boxes {
+        top: 117px;
+    }
+
+    .animated-link {
+        justify-content: end;
+    }
+
+    .move-right-word {
+        float: none;
+    }
+
+
+    .main-container {
+        padding: 0 16px;
+    }
+
+    .nav-panel__links {
+        display: none;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+
+    .can-participate {
+        margin-top: 72px;
+        font-size: 22px;
+    }
+
+    .target-patients {
+        margin-top: 71px;
+    }
+
+    .target-patients {
+        flex-direction: column;
+    }
+
+    .patients {
+        font-size: 15px;
+        margin: 24px 0 0 0;
+    }
+
+    .patients__list li {
+        margin-top: 12px;
+    }
+
+    .leader {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .leader__intro, .leader__name {
+        font-size: 12px;
+    }
+
+    .research-dates {
+        margin-top: 48px;
+        justify-content: space-between;
+    }
+
+    .research-date {
+        text-align: center;
+        margin: 0;
+    }
+
+    .research-date__number {
+        font-size: 35px;
+    }
+
+    .research-date__text {
+        font-size: 12px;
+    }
+
+    .research-date__text br {
+        display: none;
+    }
+
+    .attention {
+        font-size: 23px;
+        margin-top: 56px;
+    }
+
+    .attention br {
+        display: none;
+    }
+
+    .brands {
+        margin-top: 28px;
+    }
+
+    .brands__heading {
+        font-size: 22px;
+    }
+
+    .holitilin-tablets__img {
+        margin-bottom: -16px;
+    }
+
+    .brands__block {
+        margin-top: 16px;
+        align-items: flex-start;
+    }
+
+    .holitilin__description {
+        display: none;
+    }
+    
+    .holitilin__description_mobile {
+        display: block;
+        margin-top: 24px;
+    }
+
+    .brands__img img,
+    .brands__description {
+        margin: 0;
+    }
+
+    .brands__description_flex {
+        flex-direction: column;
+    }
+
+    .brand__number {
+        font-size: 35px;
+    }
+
+    .brand__name {
+        margin-top: 4px;
+    }
+
+    .brand__desc {
+        margin-top: 0;
+    }
+
+    .brand__name,
+    .brand__desc {
+        font-size: 12px;
+    }
+
+    .holitilin__description {
+        font-size: 15px;
+    }
+
+    .reward {
+        margin-top: 48px;
+        flex-direction: column;
+    }
+
+    .reward__heading {
+        font-size: 12px;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .reward__span {
+        margin: 0 22px 0 0;
+        font-size: 35px;
+    }
+
+    .reward__prices {
+        width: 100%;
+        justify-content: center;
+        font-size: 35px;
+    }
+
+    .reward__price_span {
+        font-size: 12px;
+    }
+
+    .reward__slash {
+        margin: 0 17px;
+    }
+
+    .apteka {
+        font-size: 15px;
+        flex-direction: column;
+        margin-top: 60px;
+    }
+
+    .apteka img {
+        max-width: 128px;
+    }
+
+    .apteka__text {
+        margin: 8px 0 0 0;
+    }
+
+    .questions {
+        margin-top: 28px;
+        font-size: 22px;
+    }
+
+    .contact {
+        margin-top: 21px;
+    }
+
+    .contact__name,
+    .contact__desc,
+    .contact__mail {
+        font-size: 12px;
+    }
+
+    .contact__phone {
+        font-size: 22px;
+        margin-top: 8px;
+    }
+
+    footer {
+        margin-top: 30px;
+    }
+
+    .sponsor {
+        line-height: 16.8px;
+        font-size: 12px;
+    }
 }

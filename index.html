@@ -13,7 +13,7 @@
     <main class="main-container">
         <div class="nav-panel">
             <div class="nav-panel__logo">
-                <img src="img/icons/logo.svg" alt="Исследовательская платформа Института Междисциплинарной Медицины">
+                <img src="img/icons/logo.svg" alt="Исследовательская платформа Института Междисциплинарной Медицины" class="logo">
             </div>
             <div class="nav-panel__links">
                 <a href="#" class="nav-panel__link">Об исследовании</a>
@@ -21,6 +21,25 @@
                 <a href="#" class="nav-panel__link">Где купить</a>
                 <a href="#" class="nav-panel__link">Контакты</a>
             </div>
+            <div class="burger-menu">
+                <img src="img/icons/burger.svg" onerror="this.src = 'img/icons/burger.svg'" alt="" class="mobile-burger-img">
+            </div>
+        </div>
+        <div class="mobile-menu">
+            <ul class="mobile-menu__links">
+                <li class="mobile-menu__link">
+                    <a href="#" class="mobile-menu__link_a">Об исследовании</a>
+                </li>
+                <li class="mobile-menu__link">
+                    <a href="#mobile-research-anchor" class="mobile-menu__link_a">Оплата</a>
+                </li>
+                <li class="mobile-menu__link">
+                    <a href="#therapy-efficiency-mobile-anchor" class="mobile-menu__link_a">Где купить</a>
+                </li>
+                <li class="mobile-menu__link">
+                    <a href="#dosing-anchor-mobile" class="mobile-menu__link_a">Контакты</a>
+                </li>
+            </ul>
         </div>
         <div class="main-banner">
             <img src="img/main-banner-boxes.png" alt="коробка холитилина" class="main-banner-boxes">
@@ -47,18 +66,20 @@
             <div class="leader">
                 <div class="leader__imgs">
                     <div class="leader__photo">
-                        <img src="img/danilov.png" alt="профессор Данилов Алексей Борисович">
+                        <img src="img/danilov.png" onerror="this.src = 'img/danilov.png'" alt="профессор Данилов Алексей Борисович" class="danilov-img">
                     </div>
                     <div class="leader__logo">
-                        <img src="img/icons/logo-amm.svg" alt="Ассоциация Междисциплинарной Медицины">
+                        <img src="img/icons/logo-amm.svg" alt="Ассоциация Междисциплинарной Медицины" class="logo-amm-img">
                     </div>
                 </div>
-                <div class="leader__intro">
-                    Научный руководитель<br> программы:
-                </div>
-                <div class="leader__name">
-                    профессор Данилов<br> Алексей Борисович.
-                </div>
+                <div class="leader__desc">
+                    <div class="leader__intro">
+                        Научный руководитель<br> программы:
+                    </div>
+                    <div class="leader__name">
+                        профессор Данилов<br> Алексей Борисович.
+                    </div>
+                </div>  
             </div>
             <div class="patients">
                 <div class="patients__heading">Целевые категории пациентов:</div>
@@ -101,7 +122,7 @@
             </div>
             <div class="brands__block">
                 <div class="brands__img">
-                    <img src="img/holitilin-box.png" alt="">
+                    <img src="img/holitilin-box.png" alt="" class="holitilin-box">
                 </div>
                 <div class="brands__description">
                     <div class="brands__description_flex">
@@ -128,6 +149,11 @@
                         иностранных аналогов.
                     </div>
                 </div>
+            </div>
+            <div class="holitilin__description_mobile">
+                <b>Холитилин</b> — произведен из европейской субстанции и самый доступный препарат по цене из
+                всех. Даже в сложившихся обстоятельствах никаких перебоев в поставках не будет, в отличие от
+                иностранных аналогов.
             </div>
         </div>
         <div class="reward">
@@ -179,7 +205,7 @@
             ЗАО «Канонфарма Продакшн»
         </div>
         <div class="sponsor-logo">
-            <img src="img/icons/pharm-logo.svg" alt="Канонфарма логотип">
+            <img src="img/icons/pharm-logo.svg" alt="Канонфарма логотип" class="pharm-logo">
         </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
