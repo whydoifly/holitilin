@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <title>Холитилин</title>
 </head>
@@ -16,10 +17,10 @@
                 <img src="img/icons/logo.svg" alt="Исследовательская платформа Института Междисциплинарной Медицины" class="logo">
             </div>
             <div class="nav-panel__links">
-                <a href="#" class="nav-panel__link">Об исследовании</a>
-                <a href="#" class="nav-panel__link">Оплата</a>
-                <a href="#" class="nav-panel__link">Где купить</a>
-                <a href="#" class="nav-panel__link">Контакты</a>
+                <a href="#about-research" class="nav-panel__link">Об исследовании</a>
+                <a href="#payment" class="nav-panel__link">Оплата</a>
+                <a href="#where-to-buy" class="nav-panel__link">Где купить</a>
+                <a href="#contacts" class="nav-panel__link">Контакты</a>
             </div>
             <div class="burger-menu">
                 <img src="img/icons/burger.svg" onerror="this.src = 'img/icons/burger.svg'" alt="" class="mobile-burger-img">
@@ -28,41 +29,41 @@
         <div class="mobile-menu">
             <ul class="mobile-menu__links">
                 <li class="mobile-menu__link">
-                    <a href="#" class="mobile-menu__link_a">Об исследовании</a>
+                    <a href="#about-research" class="mobile-menu__link_a">Об исследовании</a>
                 </li>
                 <li class="mobile-menu__link">
-                    <a href="#mobile-research-anchor" class="mobile-menu__link_a">Оплата</a>
+                    <a href="#payment" class="mobile-menu__link_a">Оплата</a>
                 </li>
                 <li class="mobile-menu__link">
-                    <a href="#therapy-efficiency-mobile-anchor" class="mobile-menu__link_a">Где купить</a>
+                    <a href="#where-to-buy" class="mobile-menu__link_a">Где купить</a>
                 </li>
                 <li class="mobile-menu__link">
-                    <a href="#dosing-anchor-mobile" class="mobile-menu__link_a">Контакты</a>
+                    <a href="#contacts" class="mobile-menu__link_a">Контакты</a>
                 </li>
             </ul>
         </div>
         <div class="main-banner">
             <img src="img/main-banner-boxes.png" alt="коробка холитилина" class="main-banner-boxes">
-            <span class="holitilin-word">ХОЛИТИЛИН<span class="holitilin-copyright">&#174;</span></span> ИССЛЕДОВАНИЕ
-            <span class="move-right-word">ПРЕПАРАТА</span>
+            <span class="holitilin-word" data-aos="fade-up" data-aos-duration="1000">ХОЛИТИЛИН<span class="holitilin-copyright">&#174;</span></span> <span class="research-word" data-aos="fade-up" data-aos-duration="2000">ИССЛЕДОВАНИЕ</span>
+            <span class="move-right-word" data-aos="fade-up" data-aos-duration="3000">ПРЕПАРАТА</span>
         </div>
-        <div class="animated-link">
+        <a href="#" class="animated-link">
             <div class="animated-link__text">
                 Принять участие<br> в исследовании
             </div> 
             <div class="circle">
                 <div class="circle__arrow"></div>
                 <div class="circle__text">
-                    <p>Принять участие в исследовании</p>
-            
+                    <p>Принять участие в исследовании</p> 
                 </div>
             </div>
-        </div>
-        <div class="can-participate">
+        </a>
+        <div class="can-participate" data-aos="zoom-out-up">
             В программе могут принимать участие неврологи, терапевты амбулаторного и госпитального звена
             <img src="img/icons/logo-and-text.svg" alt="" class="can-participate-img">
         </div>
-        <div class="target-patients">
+        <div id="about-research"></div>
+        <div class="target-patients" data-aos="fade-up">
             <div class="leader">
                 <div class="leader__imgs">
                     <div class="leader__photo">
@@ -93,15 +94,15 @@
             </div>
         </div>
         <div class="research-dates">
-            <div class="research-date">
+            <div class="research-date" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-delay="200">
                 <div class="research-date__number">15.02</div>
                 <div class="research-date__text">Начало исследования</div>
             </div>
-            <div class="research-date dates__patients">
+            <div class="research-date dates__patients" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-delay="300">
                 <div class="research-date__number">15.05</div>
                 <div class="research-date__text">Срок приёма<br> новых пациентов</div>
             </div>
-            <div class="research-date dates__finish">
+            <div class="research-date dates__finish" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-delay="400">
                 <div class="research-date__number">15.09</div>
                 <div class="research-date__text">
                     Окончание исследования
@@ -109,54 +110,85 @@
             </div>
         </div>
         <div class="attention">
-            Обратите внимание на процедуру подтверждения комплаентности пациента и доказательства того,<br> что пациент
-            действительно получил необходимый<br> курс лечения и предсказуемый клинический эффект. Результаты наблюдения
-            будут верифицированы.
+            <span data-aos="zoom-in-down">Обратите внимание</span> <span data-aos="zoom-in-down" data-aos-delay="50">на процедуру подтверждения</span> <span data-aos="zoom-in-down" data-aos-delay="80">комплаентности пациента</span> <span data-aos="zoom-in-down" data-aos-delay="100">и доказательства того,<br> что пациент</span>
+            <span data-aos="zoom-in-down" data-aos-delay="120">действительно получил необходимый</span><br> <span data-aos="zoom-in-down" data-aos-delay="130">курс лечения и предсказуемый клинический эффект.</span> <span data-aos="zoom-in-down" data-aos-delay="140">на процедуру подтверждения</span> <span data-aos="zoom-in-down" data-aos-delay="150">Результаты наблюдения
+                будут верифицированы.</span>
+        </div>
+        <div class="visits">
+            <div class="visits__left" data-aos="fade-up">
+                <div class="visit">
+                    <b>1 визит:</b> фото рецепта на выписку препарата<br> (фото рецепта можно будет прикрепить<br> в соответствующем разделе карты пациента).
+                </div>
+                <div class="visit__mobile">
+                    <b>2 и/или 3 визит:</b> фото упаковки с видимым штрих-кодом (см. рекомендации по съёмке коробок препарата, описанных в соответствующем разделе карты пациента)
+                    Фото штрих-кодов упаковок необходимы, в том числе, для обеспечения контроля упаковки и борьбы с контрофактом.
+                </div>
+                <a href="#" class="animated-link">
+                    <div class="animated-link__text">
+                        Принять участие<br> в исследовании
+                    </div> 
+                    <div class="circle">
+                        <div class="circle__arrow"></div>
+                        <div class="circle__text2">
+                            <p>Принять участие в исследовании</p> 
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="visits__right" data-aos="fade-up" data-aos-delay="100">
+                <div class="visit">
+                    <b>2 и/или 3 визит:</b> фото упаковки с видимым штрих-кодом (см. рекомендации по съёмке коробок препарата, описанных в соответствующем разделе карты пациента)
+                    Фото штрих-кодов упаковок необходимы, в том числе, для обеспечения контроля упаковки и борьбы с контрофактом.
+                </div>
+            </div>
+            
+            
         </div>
         <div class="brands">
             <div class="holitilin-tablets">
-                <img src="img/tablets.png" alt="таблетки холитилина" class="holitilin-tablets__img">
+                <img src="img/tablets.png" alt="таблетки холитилина" class="holitilin-tablets__img" data-aos="fade-up">
             </div>
-            <div class="brands__heading">
+            <div class="brands__heading" data-aos="fade-up">
                 МНН холина альфосцерат в&nbsp; рынке РФ (аптеки) существует в&nbsp; виде трех брендов:
             </div>
             <div class="brands__block">
                 <div class="brands__img">
-                    <img src="img/holitilin-box.png" alt="" class="holitilin-box">
+                    <img src="img/holitilin-box.png" alt="" class="holitilin-box" data-aos="fade-right">
                 </div>
                 <div class="brands__description">
                     <div class="brands__description_flex">
-                        <div class="brand">
+                        <div class="brand" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-delay="200">
                             <div class="brand__number">01</div>
                             <div class="brand__name">Холитилин</div>
                             <div class="brand__desc">отечественный аналог</div>
                         </div>
-                        <div class="brand">
+                        <div class="brand" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-delay="300">
                             <div class="brand__number">02</div>
                             <div class="brand__name">Церетон</div>
                             <div class="brand__desc">отечественный аналог</div>
                         </div>
-                        <div class="brand">
+                        <div class="brand" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-delay="400">
                             <div class="brand__number">03</div>
                             <div class="brand__name">Глиатилин</div>
                             <div class="brand__desc">импортный и дорогой препарат</div>
                         </div>
                     </div>
 
-                    <div class="holitilin__description">
+                    <div class="holitilin__description" data-aos="fade-up">
                         <b>Холитилин</b> — произведен из европейской субстанции и самый доступный препарат по цене из
                         всех. Даже в сложившихся обстоятельствах никаких перебоев в поставках не будет, в отличие от
                         иностранных аналогов.
                     </div>
                 </div>
             </div>
-            <div class="holitilin__description_mobile">
+            <div class="holitilin__description_mobile" data-aos="fade-up">
                 <b>Холитилин</b> — произведен из европейской субстанции и самый доступный препарат по цене из
                 всех. Даже в сложившихся обстоятельствах никаких перебоев в поставках не будет, в отличие от
                 иностранных аналогов.
             </div>
         </div>
-        <div class="reward">
+        <div id="payment"></div>
+        <div class="reward" data-aos="fade-up">
             <div class="reward__heading">
                 Вознаграждение для врачей<br> <span class="reward__span">ОПЛАТА</span>
             </div>
@@ -180,23 +212,38 @@
                 </div>
             </div>
         </div>
+        <div id="where-to-buy"></div>
         <div class="apteka">
-            <img src="img/icons/apteka.svg" alt="" class="apteka__img">
+            <img src="img/icons/apteka.svg" alt="" class="apteka__img" data-aos="fade-right">
             <div class="apteka__text">
-                В период исследования действует специальная цена на <b>Холитилин 400 мг— 890 ₽ (скидка 20%)</b> за
-                упаковку с доставкой в любую удобную аптеку на сайте <a class="apteka__link"
-                    href="https://apteka.ru/">аптека.ру</a>
+                <span data-aos="zoom-in-down">В период исследования действует</span> <span data-aos="zoom-in-down" data-aos-delay="50">специальная цена на</span> <span data-aos="zoom-in-down" data-aos-delay="80"><b>Холитилин 400 мг— 890 ₽ (скидка 20%)</b></span> <span data-aos="zoom-in-down" data-aos-delay="90">специальная цена на</span> <span data-aos="zoom-in-down" data-aos-delay="110">за
+                    упаковку с доставкой</span> <span data-aos="zoom-in-down" data-aos-delay="120">в любую удобную аптеку на сайте <a class="apteka__link"
+                        href="https://apteka.ru/">аптека.ру</a></span>
             </div>
         </div>
-        <div class="questions">
+        <div class="big-animation">
+            <a href="" class="animated-link big-animated-link">
+                <div class="animated-link__text big-animated-link__text">
+                    Вы уже принимаете участие в этом исследовании.<br> Перейдите к картам пациентов
+                </div> 
+                <div class="circle big-circle">
+                    <div class="circle__arrow circle__big-arrow"></div>
+                    <div class="circle__text3">
+                        <p>Перейти к картам пациентов • Перейти к картам пациентов •</p> 
+                    </div>
+                </div>
+            </a>
+        </div>
+        
+        <div class="questions" data-aos="fade-up">
             ОСТАЛИСЬ ВОПРОСЫ?<br>
             ЗАДАЙТЕ ИХ
         </div>
-        <div class="contact">
-            <div class="contact__name"><b>Марина Пястолова</b></div>
-            <div class="contact__desc">(Координатор проекта)</div>
-            <a class="contact__phone" href="tel:+79683638336">+7 (968) 363-83-36</a>
-            <a class="contact__mail" href="mailto:pyastolova@idm.institute">pyastolova@idm.institute</a>
+        <div class="contact" id="contacts">
+            <div class="contact__name" data-aos="fade-up" data-aos-delay="100" data-aos-anchor-placement="top-bottom"><b>Марина Пястолова</b></div>
+            <div class="contact__desc" data-aos="fade-up" data-aos-delay="150" data-aos-anchor-placement="top-bottom">(Координатор проекта)</div>
+            <a class="contact__phone" href="tel:+79683638336" data-aos="fade-up" data-aos-delay="200" data-aos-anchor-placement="top-bottom">+7 (968) 363-83-36</a>
+            <a class="contact__mail" href="mailto:pyastolova@idm.institute" data-aos="fade-up" data-aos-delay="250" data-aos-anchor-placement="top-bottom">pyastolova@idm.institute</a>
         </div>
     </main>
     <footer>
@@ -208,7 +255,10 @@
             <img src="img/icons/pharm-logo.svg" alt="Канонфарма логотип" class="pharm-logo">
         </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
     <script src="js/script.js"></script>
 </body>
 

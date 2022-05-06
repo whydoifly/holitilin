@@ -1,6 +1,16 @@
 const text = document.querySelector(".circle__text p");
 text.innerHTML = text.innerText.split("").map((letter, i) =>
-`<span class="animated-text-span" style="transform: rotateZ(${((i - 1) * 11)}deg")>${letter}</span>`
+`<span class="animated-text-span" style="transform: rotate(${((i - 1) * 11)}deg"); transform: translateX(300px)>${letter}</span>`
+)
+.join("");
+const text2 = document.querySelector(".circle__text2 p");
+text2.innerHTML = text2.innerText.split("").map((letter, i) =>
+`<span class="animated-text-span2" style="transform: rotate(${((i - 1) * 11)}deg");>${letter}</span>`
+)
+.join("");
+const text3 = document.querySelector(".circle__text3 p");
+text3.innerHTML = text3.innerText.split("").map((letter, i) =>
+`<span class="animated-text-span3" style="transform: rotate(${((i - 1) * 6.2)}deg");>${letter}</span>`
 )
 .join("");
 
@@ -14,19 +24,7 @@ for (let image of allImages) {
   imagesToReplace.push(image);
 }
 
-imagesToReplace.forEach((item) => {
-  let arr = item.src.split('/').slice(3);
-
-  let finalPath = arr[arr.length - 1];
-  let fileFormat = finalPath.slice(-4); // формат файла (.svg/.png и так далее)
-  let fileName = finalPath.split('.')[0]; // отдельное имя файла
-  let mobileName = fileName + '-mobile' + fileFormat; // имя файла с мобильным названием объединеное в строку с указанием формата
-  arr.pop();
-  arr.push(mobileName)
-  let finalString = arr.join('/');
-
-  item.src = '/' + finalString;
-});
+imageReplacer(imagesToReplace);
 
 // imagesToReplace.forEach((e) => {
 //   console.log('.' + e);
@@ -60,8 +58,42 @@ for (let link of mobileMenuLinks) {
 }
 
 window.addEventListener('resize', function(e) {
-  if (window.innerWidth < 768) {
-    console.log(window.innerWidth)
-  }
-  
+  let width = window.innerWidth;
+    imageReplacer(imagesToReplace, width);  
 }, true);
+
+window.addEventListener('DOMContentLoaded', function(e) {
+  let width = window.innerWidth;
+    imageReplacer(imagesToReplace, width);  
+}, true);
+
+
+function imageReplacer(arr, width) {
+  if (width < 768) {
+    arr.forEach((item) => {
+      let arr = item.src.split('/').slice(3);
+      let finalPath = arr[arr.length - 1];
+      let fileFormat = finalPath.slice(-4); // формат файла (.svg/.png и так далее)
+      let fileName = finalPath.split('.')[0]; // отдельное имя файла
+      if (!fileName.includes('-mobile')) {
+        let mobileName = fileName + '-mobile' + fileFormat; // имя файла с мобильным названием объединеное в строку с указанием формата
+        arr.pop();
+        arr.push(mobileName)
+        let finalString = arr.join('/');
+        item.src = '/' + finalString;
+      } 
+    });
+  } else {
+    arr.forEach((item) => {
+      let arr = item.src.split('/').slice(3);
+      let finalPath = arr[arr.length - 1];
+      let fileFormat = finalPath.slice(-4); 
+      let fileName = finalPath.split('.')[0].replace('-mobile', ''); 
+      let finalString = fileName + fileFormat;
+      arr.pop();
+      arr.push(finalString)
+      finalString = arr.join('/');
+      item.src = '/' + finalString;
+    })
+  }
+}
