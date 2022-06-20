@@ -16,6 +16,29 @@ body {
   box-sizing: border-box;
 }
 
+.take-part {
+    position: fixed;
+    bottom: 0;
+    background: rgba(255, 254, 245, 0.9);
+    width: 100%;
+    z-index: 17;
+    padding: 43px 0px;
+    text-align: center;
+}
+
+.take-part a {
+    color: #3E3921;
+    background-color: #F3D70D;
+    padding: 22px 51px;
+    border-radius: 500px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.take-part a:hover {
+    color: #3E3921;
+}
+
 a {
   text-decoration: none;
 }
@@ -557,6 +580,16 @@ footer {
 }
 
 @media (max-width: 768px) {
+    .take-part {
+        padding: 35px 0px;
+    }
+    
+    .take-part a {
+        padding: 13px 46px;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
     .main-banner {
         font-size: 35px;
     }
